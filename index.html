@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+    
+  <!--IMAGE LOGO (PNG)-->
+  <img src="https://www.freepnglogos.com/uploads/logo-chatgpt-png/black-chatgpt-logo-circle-symbol-black-png-0.png" 
+    id="LOGO" class="logo">
+  <h1 class="company"> COMPANY NAME</h1>
+  <!--NAVIGATION BAR-->
+  <div class="topnav" id="navigation_bar" style="overflow-y:scroll; overflow-x:hidden;" >
+    <a class="active" href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+
+
+<!-- TRIAL AND ERROR (SLIDESHOW)-->
+
+
+<!-- 
+  TO FIX
+  IMAGE FITIING
+  CENTER
+  RESIZABLE WINDOW
+-->
+
+
+<!--
+  WORKING
+  SLIDER
+-->
+
+
+  <div class="content">
+    <img class="mySlides" src="https://streetbounty.com/wp-content/uploads/2018/03/Alley-Bike-Hanoi-LQ-1024x576.jpg">
+    <img class="mySlides" src="https://fujifilm-x.com/wp-content/uploads/2021/01/gfx100s_sample_02_thum-1.jpg" >
+    <img class="mySlides" src="https://fujifilm-x.com/wp-content/uploads/2021/01/gfx100s_sample_04_thum-1.jpg" >
+    <div class="btn-center container section large text-white display-bottommiddle">
+      <div class="left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+      <div class="right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+      <span class= "W3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+      <span class= "W3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+      <span class= "W3-adge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    </div>
+  </div>
+
+  <!--IMAGE BUTTON-->
+  <div class="images">
+    <img class="btn1" src="https://streetbounty.com/wp-content/uploads/2018/03/Alley-Bike-Hanoi-LQ-1024x576.jpg">
+    <img class="btn1" src="https://streetbounty.com/wp-content/uploads/2018/03/Alley-Bike-Hanoi-LQ-1024x576.jpg">
+    <img class="btn1" src="https://streetbounty.com/wp-content/uploads/2018/03/Alley-Bike-Hanoi-LQ-1024x576.jpg">
+  </div>
+  
+
+  <script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  
+ 
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+  
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-white", "");
+    }
+    x[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " w3-white";
+  }
+  </script>
+  
+   
+
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
+    
+  }
+  
+/*NAVIGATION BAR (BG COLOR)*/
+.topnav {
+    overflow: hidden;
+    background-color: #d6d6d6;
+  }
+ /*NAVIGATION BAR (COLORS, TEXT, DECO)*/ 
+.topnav a {
+    float: left;
+    color: #464646;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+/*NAVIGATION BAR (HOVER ANIMATION)*/
+.topnav a:hover {
+    background-color: #ffffff;
+    color: black;
+}
+/*ACTIVE PAGE (NAVIGATION BAR)*/  
+.topnav a.active {
+    background-color: #919191;
+    color: white;
+}
+/*NAVIGATION BAR POSITIONING*/  
+#navigation_bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
+  padding-right: 30px;
+}
+/*LOGO*/
+.logo{
+  position:static; 
+  width: 220px;
+  height:120px;
+  margin-left: -50px;
+
+}
+/*FONT COMPANY NAME*/
+.company{
+  margin-top: -70px;
+  margin-left: 120px;
+  margin-bottom: 40px;
+  font-style:italic;
+}
+
+
+
+/*SLIDESHOW*/
+.mySlides {display:none}
+.left, .right, .badge {cursor:pointer}
+.badge {height:13px;width:13px;padding:0}
+/*MYSLIDES*/
+.mySlides{
+  width:650px;
+  height: 200px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}  
+
+
+
+/*TRIAL AND ERROR*/
+
+
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
+
+
+.content{
+  text-align: center;
+}
+.mySlides {
+  /**/
+}
+.w3-section, .w3-code {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+}
+.btn-center {
+  text-align: center !important;
+}
+/*CLICK LEFT POSITIONING*/
+.left{
+  margin-right: 50px;
+}
+/*CLICK RIGHT POSITIONING*/
+.right{
+  margin-top: -20px;
+  margin-left: 50px;
+}
+
+
+ 
+
+
+/*
+!!!!!!!!!!!ISSUES!!!!!!!!!!!!
+INDICATOR BUTTONS NOT SHOWING
+SLIDERS NOT POSITIONED CORRECTLY
+BADGE NOT SHOWING
+*/ 
+
+.images{
+ text-align: center;
+ margin-top: 30px;
+}
+.btn1{
+  height: 90px;
+  width: 150px;
+  margin: 5px;
+  border-radius: 10px;
+}
